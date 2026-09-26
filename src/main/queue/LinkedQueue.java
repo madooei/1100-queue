@@ -28,39 +28,25 @@ public class LinkedQueue<T> implements Queue<T> {
 
   @Override
   public void enqueue(T item) {
-    if (item == null) {
-      throw new IllegalArgumentException();
-    }
-    Node<T> newNode = new Node<>(item);
-    if (isEmpty()) {
-      head = newNode;       // the queue was empty; the new node is the front
-    } else {
-      tail.next = newNode;  // link the new node after the old back
-    }
-    tail = newNode;         // either way, the new node is the new back
+    // TODO: Implement me
+    throw new UnsupportedOperationException("TODO: Implement me");
   }
 
   @Override
   public void dequeue() {
-    if (isEmpty()) {
-      throw new NoSuchElementException();
-    }
-    head = head.next;   // unlink the old front; the next node is the new front
-    if (head == null) {
-      tail = null;      // the queue is now empty; tail must agree
-    }
+    // TODO: Implement me
+    throw new UnsupportedOperationException("TODO: Implement me");
   }
 
   @Override
   public T front() {
-    if (isEmpty()) {
-      throw new NoSuchElementException();
-    }
-    return head.value;  // the front item is in the head node
+    // TODO: Implement me
+    throw new UnsupportedOperationException("TODO: Implement me");
   }
 
   @Override
   public boolean isEmpty() {
-    return head == null;
+    // TODO: Implement me
+    throw new UnsupportedOperationException("TODO: Implement me");
   }
 }

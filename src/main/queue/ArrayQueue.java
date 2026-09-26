@@ -23,37 +23,26 @@ public class ArrayQueue<T> implements Queue<T> {
 
   @Override
   public void enqueue(T item) {
-    if (item == null) {
-      throw new IllegalArgumentException();
-    }
-    if (size == arr.length) {
-      grow();  // out of room: make the backing array bigger first
-    }
-    arr[(front + size) % arr.length] = item;  // place the item in the next free slot
-    size++;
+    // TODO: Implement me
+    throw new UnsupportedOperationException("TODO: Implement me");
   }
 
   @Override
   public void dequeue() {
-    if (isEmpty()) {
-      throw new NoSuchElementException();
-    }
-    arr[front] = null;                 // clear the slot so the object can be garbage collected
-    front = (front + 1) % arr.length;  // move front one position around the circle
-    size--;
+    // TODO: Implement me
+    throw new UnsupportedOperationException("TODO: Implement me");
   }
 
   @Override
   public T front() {
-    if (isEmpty()) {
-      throw new NoSuchElementException();
-    }
-    return arr[front];  // the front item is at index front
+    // TODO: Implement me
+    throw new UnsupportedOperationException("TODO: Implement me");
   }
 
   @Override
   public boolean isEmpty() {
-    return size == 0;
+    // TODO: Implement me
+    throw new UnsupportedOperationException("TODO: Implement me");
   }
 
   // Doubles the capacity. Same cast rationale as the constructor.
