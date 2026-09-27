@@ -48,11 +48,7 @@ public class ArrayQueue<T> implements Queue<T> {
   // Doubles the capacity. Same cast rationale as the constructor.
   @SuppressWarnings("unchecked")
   private void grow() {
-    T[] bigger = (T[]) new Object[arr.length * 2];
-    for (int i = 0; i < size; i++) {
-      bigger[i] = arr[(front + i) % arr.length];  // the i-th item of the queue, in order
-    }
-    arr = bigger;
-    front = 0;  // the queue now starts at the beginning of the new array
+    // TODO: Implement me
+    throw new UnsupportedOperationException("TODO: Implement me");
   }
 }
