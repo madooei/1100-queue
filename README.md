@@ -40,7 +40,7 @@ code/
 - `scripts/test.sh queue.ArrayQueueTest` — compiles everything and runs only that test class. Use this while you are working on one class and the other is still empty.
 - `scripts/run.sh demo.ArrayQueueDemo` — compiles everything and runs that one demo. Every class you implement has its own demo, `<Class>Demo`.
 
-## What's here
+## Contents
 
 - `queue.Queue<T>` — the Queue contract: `enqueue`, `dequeue`, `front`, and `isEmpty`.
 - `queue.LinkedQueue<T>` — the node-backed implementation, with the front at the head of the list and the back at the tail.
